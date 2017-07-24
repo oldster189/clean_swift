@@ -11,10 +11,26 @@
 //
 
 import UIKit
+import Alamofire
 
 class SkillOtherWorker
 {
-  func doSomeWork()
-  {
-  }
+    func fetchAllSKillOther(idJsk:String, idResume:String, completion:@escaping([SkillOtherData]?) ->Void)
+    {
+        let rounter = AlamofireRouter.getSkillOther(idJsk: idJsk, idResume: idResume)
+        Alamofire.request(rounter).responseJSON { (response) in
+            switch response.result {
+            case .success(let value):
+                let re = SkillOtherBase(object: value)
+                if re.success == 1{
+                    if let list = re.data {
+                        completion(list)
+                    }
+                }
+            case .failure(let error):
+                print(error)
+                completion(nil)
+            }
+        }
+    }
 }

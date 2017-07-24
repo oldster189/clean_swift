@@ -1,0 +1,6 @@
+framework module Pods_miniTopgun {
+  umbrella header "Pods-miniTopgun-umbrella.h"
+
+  export *
+  module * { export * }
+}

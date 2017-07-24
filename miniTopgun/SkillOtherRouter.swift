@@ -14,7 +14,7 @@ import UIKit
 
 @objc protocol SkillOtherRoutingLogic
 {
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
+  func routeToShowSkillOther(segue: UIStoryboardSegue)
 }
 
 protocol SkillOtherDataPassing
@@ -29,32 +29,25 @@ class SkillOtherRouter: NSObject, SkillOtherRoutingLogic, SkillOtherDataPassing
   
   // MARK: Routing
   
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
-  //{
-  //  if let segue = segue {
-  //    let destinationVC = segue.destination as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //  } else {
-  //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-  //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-  //  }
-  //}
+    func routeToShowSkillOther(segue: UIStoryboardSegue)
+    {
+        let destinationVC = segue.destination as! ShowSkillOtherViewController
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToShowOrder(source: dataStore!, destination: &destinationDS)
+    }
 
   // MARK: Navigation
   
-  //func navigateToSomewhere(source: SkillOtherViewController, destination: SomewhereViewController)
-  //{
-  //  source.show(destination, sender: nil)
-  //}
+    func navigateToShowOrder(source: SkillOtherViewController, destination: ShowSkillOtherViewController)
+    {
+        source.show(destination, sender: nil)
+    }
   
   // MARK: Passing data
   
-  //func passDataToSomewhere(source: SkillOtherDataStore, destination: inout SomewhereDataStore)
-  //{
-  //  destination.name = source.name
-  //}
+    func passDataToShowOrder(source: SkillOtherDataStore, destination: inout ShowSkillOtherDataStore)
+    {
+        let selectedRow = viewController?.mTableView.indexPathForSelectedRow?.row
+        destination.skillOtherData = source.skillOtherList?[selectedRow!]
+    }
 }

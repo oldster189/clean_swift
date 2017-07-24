@@ -14,19 +14,27 @@ import UIKit
 
 enum SkillOther
 {
-  // MARK: Use cases
-  
-  enum Something
-  {
-    struct Request
-    {
+    struct skillOtherField {
+        var idJsk:String
+        var idResume:String	
     }
-    struct Response
+    
+    // MARK: Use cases
+     
+    enum FetchAllSkillOther
     {
-//        var skillOther:[
+        struct Request
+        {
+            var skillOtherField:skillOtherField
+        }
+        struct Response
+        {
+            var skillOtherList: [SkillOtherData]?
+        }
+        struct ViewModel
+        {
+           var skillOtherList: [SkillOtherData]?
+        }
     }
-    struct ViewModel
-    {
-    }
-  }
+    
 }

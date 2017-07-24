@@ -7,14 +7,52 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		9196F29948D0876F61AD4C11 /* Pods_miniTopgun.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 1C8E4FE1245F2B127B4323FD /* Pods_miniTopgun.framework */; };
+		A90E42241F264C1300D99426 /* SkillOtherCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E42231F264C1300D99426 /* SkillOtherCell.swift */; };
+		A90E42261F264D9A00D99426 /* ReuseIdentifierProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E42251F264D9A00D99426 /* ReuseIdentifierProtocol.swift */; };
+		A90E422F1F2657CE00D99426 /* ShowSkillOtherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E42291F2657CE00D99426 /* ShowSkillOtherInteractor.swift */; };
+		A90E42301F2657CE00D99426 /* ShowSkillOtherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E422A1F2657CE00D99426 /* ShowSkillOtherModels.swift */; };
+		A90E42311F2657CE00D99426 /* ShowSkillOtherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E422B1F2657CE00D99426 /* ShowSkillOtherPresenter.swift */; };
+		A90E42321F2657CE00D99426 /* ShowSkillOtherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E422C1F2657CE00D99426 /* ShowSkillOtherRouter.swift */; };
+		A90E42331F2657CE00D99426 /* ShowSkillOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E422D1F2657CE00D99426 /* ShowSkillOtherViewController.swift */; };
+		A90E42341F2657CE00D99426 /* ShowSkillOtherWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = A90E422E1F2657CE00D99426 /* ShowSkillOtherWorker.swift */; };
+		A94D4EB41F26373100807A58 /* AlamofireRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D4EB31F26373100807A58 /* AlamofireRouter.swift */; };
+		A94D4EB61F263A7A00807A58 /* AlamofireRounterMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D4EB51F263A7A00807A58 /* AlamofireRounterMethod.swift */; };
+		A94D4EB81F263A9100807A58 /* AlamofireRounterParameter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D4EB71F263A9100807A58 /* AlamofireRounterParameter.swift */; };
+		A94D4EBA1F263AAB00807A58 /* AlamofireRouterURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D4EB91F263AAB00807A58 /* AlamofireRouterURLRequest.swift */; };
+		A94D4EBC1F263B0500807A58 /* AlamofireRouterPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D4EBB1F263B0500807A58 /* AlamofireRouterPath.swift */; };
 		D200C98E1F25FECD0097F0A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C98D1F25FECD0097F0A9 /* AppDelegate.swift */; };
 		D200C9901F25FECD0097F0A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C98F1F25FECD0097F0A9 /* ViewController.swift */; };
 		D200C9931F25FECD0097F0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D200C9911F25FECD0097F0A9 /* Main.storyboard */; };
 		D200C9951F25FECD0097F0A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D200C9941F25FECD0097F0A9 /* Assets.xcassets */; };
 		D200C9981F25FECD0097F0A9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D200C9961F25FECD0097F0A9 /* LaunchScreen.storyboard */; };
+		D200C9C11F260A8E0097F0A9 /* SkillOtherBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C9B91F260A8E0097F0A9 /* SkillOtherBase.swift */; };
+		D200C9C21F260A8E0097F0A9 /* SkillOtherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C9BA1F260A8E0097F0A9 /* SkillOtherData.swift */; };
+		D200C9C31F260A8E0097F0A9 /* SkillOtherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C9BB1F260A8E0097F0A9 /* SkillOtherInteractor.swift */; };
+		D200C9C41F260A8E0097F0A9 /* SkillOtherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C9BC1F260A8E0097F0A9 /* SkillOtherModels.swift */; };
+		D200C9C51F260A8E0097F0A9 /* SkillOtherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C9BD1F260A8E0097F0A9 /* SkillOtherPresenter.swift */; };
+		D200C9C61F260A8E0097F0A9 /* SkillOtherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C9BE1F260A8E0097F0A9 /* SkillOtherRouter.swift */; };
+		D200C9C71F260A8E0097F0A9 /* SkillOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C9BF1F260A8E0097F0A9 /* SkillOtherViewController.swift */; };
+		D200C9C81F260A8E0097F0A9 /* SkillOtherWorker.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C9C01F260A8E0097F0A9 /* SkillOtherWorker.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03D2263F695C14459C00B5A3 /* Pods-miniTopgun.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miniTopgun.release.xcconfig"; path = "Pods/Target Support Files/Pods-miniTopgun/Pods-miniTopgun.release.xcconfig"; sourceTree = "<group>"; };
+		1C8E4FE1245F2B127B4323FD /* Pods_miniTopgun.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_miniTopgun.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7FF46C21D1629536F06B74E6 /* Pods-miniTopgun.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-miniTopgun.debug.xcconfig"; path = "Pods/Target Support Files/Pods-miniTopgun/Pods-miniTopgun.debug.xcconfig"; sourceTree = "<group>"; };
+		A90E42231F264C1300D99426 /* SkillOtherCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillOtherCell.swift; sourceTree = "<group>"; };
+		A90E42251F264D9A00D99426 /* ReuseIdentifierProtocol.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ReuseIdentifierProtocol.swift; sourceTree = "<group>"; };
+		A90E42291F2657CE00D99426 /* ShowSkillOtherInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSkillOtherInteractor.swift; sourceTree = "<group>"; };
+		A90E422A1F2657CE00D99426 /* ShowSkillOtherModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSkillOtherModels.swift; sourceTree = "<group>"; };
+		A90E422B1F2657CE00D99426 /* ShowSkillOtherPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSkillOtherPresenter.swift; sourceTree = "<group>"; };
+		A90E422C1F2657CE00D99426 /* ShowSkillOtherRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSkillOtherRouter.swift; sourceTree = "<group>"; };
+		A90E422D1F2657CE00D99426 /* ShowSkillOtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSkillOtherViewController.swift; sourceTree = "<group>"; };
+		A90E422E1F2657CE00D99426 /* ShowSkillOtherWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ShowSkillOtherWorker.swift; sourceTree = "<group>"; };
+		A94D4EB31F26373100807A58 /* AlamofireRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRouter.swift; sourceTree = "<group>"; };
+		A94D4EB51F263A7A00807A58 /* AlamofireRounterMethod.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRounterMethod.swift; sourceTree = "<group>"; };
+		A94D4EB71F263A9100807A58 /* AlamofireRounterParameter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRounterParameter.swift; sourceTree = "<group>"; };
+		A94D4EB91F263AAB00807A58 /* AlamofireRouterURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRouterURLRequest.swift; sourceTree = "<group>"; };
+		A94D4EBB1F263B0500807A58 /* AlamofireRouterPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRouterPath.swift; sourceTree = "<group>"; };
 		D200C98A1F25FECD0097F0A9 /* miniTopgun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniTopgun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D200C98D1F25FECD0097F0A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D200C98F1F25FECD0097F0A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -22,6 +60,14 @@
 		D200C9941F25FECD0097F0A9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D200C9971F25FECD0097F0A9 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D200C9991F25FECD0097F0A9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D200C9B91F260A8E0097F0A9 /* SkillOtherBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillOtherBase.swift; sourceTree = "<group>"; };
+		D200C9BA1F260A8E0097F0A9 /* SkillOtherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillOtherData.swift; sourceTree = "<group>"; };
+		D200C9BB1F260A8E0097F0A9 /* SkillOtherInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillOtherInteractor.swift; sourceTree = "<group>"; };
+		D200C9BC1F260A8E0097F0A9 /* SkillOtherModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillOtherModels.swift; sourceTree = "<group>"; };
+		D200C9BD1F260A8E0097F0A9 /* SkillOtherPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillOtherPresenter.swift; sourceTree = "<group>"; };
+		D200C9BE1F260A8E0097F0A9 /* SkillOtherRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillOtherRouter.swift; sourceTree = "<group>"; };
+		D200C9BF1F260A8E0097F0A9 /* SkillOtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillOtherViewController.swift; sourceTree = "<group>"; };
+		D200C9C01F260A8E0097F0A9 /* SkillOtherWorker.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillOtherWorker.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -29,17 +75,80 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				9196F29948D0876F61AD4C11 /* Pods_miniTopgun.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		046D71D1AFAB509E1A7DEE35 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				1C8E4FE1245F2B127B4323FD /* Pods_miniTopgun.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		1776B1DE8D2E4916D5589468 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				7FF46C21D1629536F06B74E6 /* Pods-miniTopgun.debug.xcconfig */,
+				03D2263F695C14459C00B5A3 /* Pods-miniTopgun.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		A90E42211F264BD300D99426 /* SkillOther */ = {
+			isa = PBXGroup;
+			children = (
+				A90E42221F264BE600D99426 /* Cell */,
+				D200C9BB1F260A8E0097F0A9 /* SkillOtherInteractor.swift */,
+				D200C9BC1F260A8E0097F0A9 /* SkillOtherModels.swift */,
+				D200C9BD1F260A8E0097F0A9 /* SkillOtherPresenter.swift */,
+				D200C9BE1F260A8E0097F0A9 /* SkillOtherRouter.swift */,
+				D200C9BF1F260A8E0097F0A9 /* SkillOtherViewController.swift */,
+				D200C9C01F260A8E0097F0A9 /* SkillOtherWorker.swift */,
+			);
+			name = SkillOther;
+			sourceTree = "<group>";
+		};
+		A90E42221F264BE600D99426 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				A90E42231F264C1300D99426 /* SkillOtherCell.swift */,
+			);
+			name = Cell;
+			sourceTree = "<group>";
+		};
+		A90E42271F264DA100D99426 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				A90E42251F264D9A00D99426 /* ReuseIdentifierProtocol.swift */,
+			);
+			name = Utils;
+			sourceTree = "<group>";
+		};
+		A90E42281F26577F00D99426 /* ShowSkillOther */ = {
+			isa = PBXGroup;
+			children = (
+				A90E42291F2657CE00D99426 /* ShowSkillOtherInteractor.swift */,
+				A90E422A1F2657CE00D99426 /* ShowSkillOtherModels.swift */,
+				A90E422B1F2657CE00D99426 /* ShowSkillOtherPresenter.swift */,
+				A90E422C1F2657CE00D99426 /* ShowSkillOtherRouter.swift */,
+				A90E422D1F2657CE00D99426 /* ShowSkillOtherViewController.swift */,
+				A90E422E1F2657CE00D99426 /* ShowSkillOtherWorker.swift */,
+			);
+			name = ShowSkillOther;
+			sourceTree = "<group>";
+		};
 		D200C9811F25FECD0097F0A9 = {
 			isa = PBXGroup;
 			children = (
 				D200C98C1F25FECD0097F0A9 /* miniTopgun */,
 				D200C98B1F25FECD0097F0A9 /* Products */,
+				1776B1DE8D2E4916D5589468 /* Pods */,
+				046D71D1AFAB509E1A7DEE35 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -54,6 +163,11 @@
 		D200C98C1F25FECD0097F0A9 /* miniTopgun */ = {
 			isa = PBXGroup;
 			children = (
+				A90E42271F264DA100D99426 /* Utils */,
+				D200C9C91F260AA40097F0A9 /* Models */,
+				D200C9CA1F260AAF0097F0A9 /* Services */,
+				D200C9CB1F260AB80097F0A9 /* Workers */,
+				D200C9CC1F260AC50097F0A9 /* Scenes */,
 				D200C98D1F25FECD0097F0A9 /* AppDelegate.swift */,
 				D200C98F1F25FECD0097F0A9 /* ViewController.swift */,
 				D200C9911F25FECD0097F0A9 /* Main.storyboard */,
@@ -64,6 +178,43 @@
 			path = miniTopgun;
 			sourceTree = "<group>";
 		};
+		D200C9C91F260AA40097F0A9 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D200C9B91F260A8E0097F0A9 /* SkillOtherBase.swift */,
+				D200C9BA1F260A8E0097F0A9 /* SkillOtherData.swift */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
+		D200C9CA1F260AAF0097F0A9 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				A94D4EB31F26373100807A58 /* AlamofireRouter.swift */,
+				A94D4EB51F263A7A00807A58 /* AlamofireRounterMethod.swift */,
+				A94D4EBB1F263B0500807A58 /* AlamofireRouterPath.swift */,
+				A94D4EB71F263A9100807A58 /* AlamofireRounterParameter.swift */,
+				A94D4EB91F263AAB00807A58 /* AlamofireRouterURLRequest.swift */,
+			);
+			name = Services;
+			sourceTree = "<group>";
+		};
+		D200C9CB1F260AB80097F0A9 /* Workers */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Workers;
+			sourceTree = "<group>";
+		};
+		D200C9CC1F260AC50097F0A9 /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+				A90E42211F264BD300D99426 /* SkillOther */,
+				A90E42281F26577F00D99426 /* ShowSkillOther */,
+			);
+			name = Scenes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -71,9 +222,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = D200C99C1F25FECD0097F0A9 /* Build configuration list for PBXNativeTarget "miniTopgun" */;
 			buildPhases = (
+				B4C433959A7568A272D105A2 /* [CP] Check Pods Manifest.lock */,
 				D200C9861F25FECD0097F0A9 /* Sources */,
 				D200C9871F25FECD0097F0A9 /* Frameworks */,
 				D200C9881F25FECD0097F0A9 /* Resources */,
+				345B2B4636794E190BA3C2A9 /* [CP] Embed Pods Frameworks */,
+				9116510929CA5006E3E90DF3 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -131,13 +285,82 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		345B2B4636794E190BA3C2A9 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-miniTopgun/Pods-miniTopgun-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9116510929CA5006E3E90DF3 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-miniTopgun/Pods-miniTopgun-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		B4C433959A7568A272D105A2 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [[ $? != 0 ]] ; then\n    cat << EOM\nerror: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\nEOM\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		D200C9861F25FECD0097F0A9 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D200C9C81F260A8E0097F0A9 /* SkillOtherWorker.swift in Sources */,
 				D200C9901F25FECD0097F0A9 /* ViewController.swift in Sources */,
+				A90E42341F2657CE00D99426 /* ShowSkillOtherWorker.swift in Sources */,
+				D200C9C11F260A8E0097F0A9 /* SkillOtherBase.swift in Sources */,
+				A94D4EBC1F263B0500807A58 /* AlamofireRouterPath.swift in Sources */,
+				A94D4EB61F263A7A00807A58 /* AlamofireRounterMethod.swift in Sources */,
+				D200C9C41F260A8E0097F0A9 /* SkillOtherModels.swift in Sources */,
+				A90E422F1F2657CE00D99426 /* ShowSkillOtherInteractor.swift in Sources */,
+				A94D4EB41F26373100807A58 /* AlamofireRouter.swift in Sources */,
+				A90E42301F2657CE00D99426 /* ShowSkillOtherModels.swift in Sources */,
+				A90E42261F264D9A00D99426 /* ReuseIdentifierProtocol.swift in Sources */,
+				A90E42311F2657CE00D99426 /* ShowSkillOtherPresenter.swift in Sources */,
+				A94D4EB81F263A9100807A58 /* AlamofireRounterParameter.swift in Sources */,
+				D200C9C71F260A8E0097F0A9 /* SkillOtherViewController.swift in Sources */,
+				A90E42321F2657CE00D99426 /* ShowSkillOtherRouter.swift in Sources */,
+				D200C9C61F260A8E0097F0A9 /* SkillOtherRouter.swift in Sources */,
+				D200C9C31F260A8E0097F0A9 /* SkillOtherInteractor.swift in Sources */,
+				D200C9C21F260A8E0097F0A9 /* SkillOtherData.swift in Sources */,
+				D200C9C51F260A8E0097F0A9 /* SkillOtherPresenter.swift in Sources */,
 				D200C98E1F25FECD0097F0A9 /* AppDelegate.swift in Sources */,
+				A94D4EBA1F263AAB00807A58 /* AlamofireRouterURLRequest.swift in Sources */,
+				A90E42331F2657CE00D99426 /* ShowSkillOtherViewController.swift in Sources */,
+				A90E42241F264C1300D99426 /* SkillOtherCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -260,6 +483,7 @@
 		};
 		D200C99D1F25FECD0097F0A9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 7FF46C21D1629536F06B74E6 /* Pods-miniTopgun.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = miniTopgun/Info.plist;
@@ -272,6 +496,7 @@
 		};
 		D200C99E1F25FECD0097F0A9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 03D2263F695C14459C00B5A3 /* Pods-miniTopgun.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = miniTopgun/Info.plist;
@@ -301,6 +526,7 @@
 				D200C99E1F25FECD0097F0A9 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

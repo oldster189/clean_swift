@@ -14,7 +14,7 @@ import UIKit
 
 protocol SkillOtherPresentationLogic
 {
-  func presentSomething(response: SkillOther.Something.Response)
+  func presentSomething(response: SkillOther.FetchAllSkillOther.Response)
 }
 
 class SkillOtherPresenter: SkillOtherPresentationLogic
@@ -23,9 +23,9 @@ class SkillOtherPresenter: SkillOtherPresentationLogic
   
   // MARK: Do something
   
-  func presentSomething(response: SkillOther.Something.Response)
+  func presentSomething(response: SkillOther.FetchAllSkillOther.Response)
   {
-    let viewModel = SkillOther.Something.ViewModel()
+    let viewModel = SkillOther.FetchAllSkillOther.ViewModel(skillOtherList: response.skillOtherList)
     viewController?.displaySomething(viewModel: viewModel)
   }
 }
