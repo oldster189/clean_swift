@@ -23,6 +23,7 @@ enum SkillOther
     }
     struct Response
     {
+//        var skillOther:[
     }
     struct ViewModel
     {
