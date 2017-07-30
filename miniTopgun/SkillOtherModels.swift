@@ -12,20 +12,18 @@
 
 import UIKit
 
-enum SkillOther
+enum ListSkillOther
 {
-    struct skillOtherField {
+    struct BodyRequest {
         var idJsk:String
-        var idResume:String	
+        var idResume:String
     }
     
-    // MARK: Use cases
-     
-    enum FetchAllSkillOther
+    enum FetchAll
     {
         struct Request
         {
-            var skillOtherField:skillOtherField
+            var bodyRequest:BodyRequest
         }
         struct Response
         {
@@ -35,6 +33,5 @@ enum SkillOther
         {
            var skillOtherList: [SkillOtherData]?
         }
-    }
-    
+    } 
 }

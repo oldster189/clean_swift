@@ -14,7 +14,7 @@ import UIKit
 
 protocol SkillOtherBusinessLogic
 {
-    func fetchAllSkillOther (request:SkillOther.FetchAllSkillOther.Request)
+    func fetchAllSkillOther (request:ListSkillOther.FetchAll.Request)
 }
 
 protocol SkillOtherDataStore
@@ -29,16 +29,15 @@ class SkillOtherInteractor: SkillOtherBusinessLogic, SkillOtherDataStore
     var worker: SkillOtherWorker? 
     var skillOtherList: [SkillOtherData]?
     
-    // MARK: Do something
+    // MARK: Do something 
     
-    
-    func fetchAllSkillOther (request:SkillOther.FetchAllSkillOther.Request){
-        let request = request.skillOtherField
+    func fetchAllSkillOther (request:ListSkillOther.FetchAll.Request){
+        let request = request.bodyRequest
         
         worker = SkillOtherWorker()
         worker?.fetchAllSKillOther(idJsk: request.idJsk, idResume: request.idResume, completion: { (list) in
             self.skillOtherList = list
-            let response = SkillOther.FetchAllSkillOther.Response(skillOtherList: self.skillOtherList)
+            let response = ListSkillOther.FetchAll.Response(skillOtherList: self.skillOtherList)
             self.presenter?.presentSomething(response: response)
         }) 
     }

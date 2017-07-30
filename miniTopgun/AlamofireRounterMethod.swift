@@ -12,10 +12,14 @@ import Alamofire
 extension AlamofireRouter { 
     var method: Alamofire.HTTPMethod {
         switch self {
-        case .getSkillOther:
+        case .fetchSkillOther:
             return .get
         case .createSkillOther:
             return .post
+        case .updateSkillOther:
+            return .put
+        case .fetchLevelSkill:
+            return .get
         }
     }
 }

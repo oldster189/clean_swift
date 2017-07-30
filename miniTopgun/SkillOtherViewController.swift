@@ -14,7 +14,7 @@ import UIKit
 
 protocol SkillOtherDisplayLogic: class
 {
-    func displaySomething(viewModel: SkillOther.FetchAllSkillOther.ViewModel)
+    func displaySomething(viewModel: ListSkillOther.FetchAll.ViewModel)
 }
 
 class SkillOtherViewController: UIViewController, SkillOtherDisplayLogic
@@ -72,8 +72,14 @@ class SkillOtherViewController: UIViewController, SkillOtherDisplayLogic
         super.viewDidLoad()
         self.title = "Skill Other"
         self.setupTableView()
+    }
+    
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
+        mLoadingView.isHidden = false
         self.fetchAllSkillOther()
     }
+     
     
     // MARK: Do something
     fileprivate func setupTableView() {
@@ -82,18 +88,20 @@ class SkillOtherViewController: UIViewController, SkillOtherDisplayLogic
     
     
     func fetchAllSkillOther()
-    {
-        let request = SkillOther.FetchAllSkillOther.Request(skillOtherField: SkillOther.skillOtherField(idJsk: "114459", idResume: "0"))
+    { 
+        let request = ListSkillOther.FetchAll.Request(bodyRequest: ListSkillOther.BodyRequest(idJsk: "114459", idResume: "0"))
         interactor?.fetchAllSkillOther(request: request)
     }
     
-    func displaySomething(viewModel: SkillOther.FetchAllSkillOther.ViewModel)
+    func displaySomething(viewModel: ListSkillOther.FetchAll.ViewModel)
     {
         displayedSkillOther = viewModel.skillOtherList
         mTableView.reloadData()
+        mLoadingView.isHidden = true
         
     }
     
+    @IBOutlet weak var mLoadingView:UIView!
     @IBOutlet weak var mTableView:UITableView!
 }
 

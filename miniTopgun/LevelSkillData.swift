@@ -1,5 +1,5 @@
 //
-//  SkillOtherBase.swift
+//  LevelSkillData.swift
 //
 //  Created by itthipon wiwatthanasathit on 7/31/2560 BE
 //  Copyright (c) . All rights reserved.
@@ -8,17 +8,19 @@
 import Foundation
 import SwiftyJSON
 
-public final class SkillOtherBase: NSCoding {
+public final class LevelSkillData:NSObject, NSCoding {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
-    static let data = "data"
-    static let success = "success"
+    static let nAME = "NAME"
+    static let iDLEVEL = "ID_LEVEL"
+    static let iDLANGUAGE = "ID_LANGUAGE"
   }
 
   // MARK: Properties
-  public var data: [SkillOtherData]?
-  public var success: Int?
+  public var nAME: String?
+  public var iDLEVEL: String?
+  public var iDLANGUAGE: String?
 
   // MARK: SwiftyJSON Initializers
   /// Initiates the instance based on the object.
@@ -33,8 +35,9 @@ public final class SkillOtherBase: NSCoding {
   ///
   /// - parameter json: JSON object from SwiftyJSON.
   public required init(json: JSON) {
-    if let items = json[SerializationKeys.data].array { data = items.map { SkillOtherData(json: $0) } }
-    success = json[SerializationKeys.success].int
+    nAME = json[SerializationKeys.nAME].string
+    iDLEVEL = json[SerializationKeys.iDLEVEL].string
+    iDLANGUAGE = json[SerializationKeys.iDLANGUAGE].string
   }
 
   /// Generates description of the object in the form of a NSDictionary.
@@ -42,20 +45,23 @@ public final class SkillOtherBase: NSCoding {
   /// - returns: A Key value pair containing all valid values in the object.
   public func dictionaryRepresentation() -> [String: Any] {
     var dictionary: [String: Any] = [:]
-    if let value = data { dictionary[SerializationKeys.data] = value.map { $0.dictionaryRepresentation() } }
-    if let value = success { dictionary[SerializationKeys.success] = value }
+    if let value = nAME { dictionary[SerializationKeys.nAME] = value }
+    if let value = iDLEVEL { dictionary[SerializationKeys.iDLEVEL] = value }
+    if let value = iDLANGUAGE { dictionary[SerializationKeys.iDLANGUAGE] = value }
     return dictionary
   }
 
   // MARK: NSCoding Protocol
   required public init(coder aDecoder: NSCoder) {
-    self.data = aDecoder.decodeObject(forKey: SerializationKeys.data) as? [SkillOtherData]
-    self.success = aDecoder.decodeObject(forKey: SerializationKeys.success) as? Int
+    self.nAME = aDecoder.decodeObject(forKey: SerializationKeys.nAME) as? String
+    self.iDLEVEL = aDecoder.decodeObject(forKey: SerializationKeys.iDLEVEL) as? String
+    self.iDLANGUAGE = aDecoder.decodeObject(forKey: SerializationKeys.iDLANGUAGE) as? String
   }
 
   public func encode(with aCoder: NSCoder) {
-    aCoder.encode(data, forKey: SerializationKeys.data)
-    aCoder.encode(success, forKey: SerializationKeys.success)
+    aCoder.encode(nAME, forKey: SerializationKeys.nAME)
+    aCoder.encode(iDLEVEL, forKey: SerializationKeys.iDLEVEL)
+    aCoder.encode(iDLANGUAGE, forKey: SerializationKeys.iDLANGUAGE)
   }
 
 }

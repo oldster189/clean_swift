@@ -33,21 +33,27 @@ class SkillOtherRouter: NSObject, SkillOtherRoutingLogic, SkillOtherDataPassing
     {
         let destinationVC = segue.destination as! ShowSkillOtherViewController
         var destinationDS = destinationVC.router!.dataStore!
-        passDataToShowOrder(source: dataStore!, destination: &destinationDS)
+        passDataToShowOrder(source: dataStore!, destination: &destinationDS) 
+        print("routeToShowSkillOther")
     }
-
+    
+    func routeToCreateSkillOther(segue: UIStoryboardSegue)
+    {
+        print("routeToCreateSkillOther")
+    }
   // MARK: Navigation
   
     func navigateToShowOrder(source: SkillOtherViewController, destination: ShowSkillOtherViewController)
     {
         source.show(destination, sender: nil)
     }
-  
+    
+   
   // MARK: Passing data
   
     func passDataToShowOrder(source: SkillOtherDataStore, destination: inout ShowSkillOtherDataStore)
     {
         let selectedRow = viewController?.mTableView.indexPathForSelectedRow?.row
-        destination.skillOtherData = source.skillOtherList?[selectedRow!]
+        destination.skillOtherDataEdit = source.skillOtherList?[selectedRow!]
     }
 }

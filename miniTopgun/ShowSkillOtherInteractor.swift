@@ -20,7 +20,8 @@ protocol ShowSkillOtherBusinessLogic
 protocol ShowSkillOtherDataStore
 {
     //var name: String { get set }
-    var skillOtherData: SkillOtherData! { get set }
+    var skillOtherDataEdit: SkillOtherData! { get set }
+    var isUpdate: Bool! { get set }
 }
 
 class ShowSkillOtherInteractor: ShowSkillOtherBusinessLogic, ShowSkillOtherDataStore
@@ -29,13 +30,13 @@ class ShowSkillOtherInteractor: ShowSkillOtherBusinessLogic, ShowSkillOtherDataS
     var presenter: ShowSkillOtherPresentationLogic?
     var worker: ShowSkillOtherWorker?
     
-    var skillOtherData: SkillOtherData!
-    
+    var skillOtherDataEdit: SkillOtherData!
+    var isUpdate: Bool!
     // MARK: Do something
     
     func getSkillOtherData(request: ShowSkillOther.GetSkillOther.Request)
     {
-        let response = ShowSkillOther.GetSkillOther.Response(skillOtherData: skillOtherData)
+        let response = ShowSkillOther.GetSkillOther.Response(skillOtherData: skillOtherDataEdit)
         presenter?.presentSkillOther(response: response)
     }
 }

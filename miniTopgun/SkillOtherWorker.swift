@@ -17,7 +17,7 @@ class SkillOtherWorker
 {
     func fetchAllSKillOther(idJsk:String, idResume:String, completion:@escaping([SkillOtherData]?) ->Void)
     {
-        let rounter = AlamofireRouter.getSkillOther(idJsk: idJsk, idResume: idResume)
+        let rounter = AlamofireRouter.fetchSkillOther(idJsk: idJsk, idResume: idResume)
         Alamofire.request(rounter).responseJSON { (response) in
             switch response.result {
             case .success(let value):

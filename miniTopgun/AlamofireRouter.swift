@@ -10,6 +10,8 @@ import Foundation
 import Alamofire
 
 enum AlamofireRouter: URLRequestConvertible {
-    case getSkillOther(idJsk: String, idResume: String)
-    case createSkillOther(idJsk: String, idResume: String)
+    case fetchSkillOther(idJsk: String, idResume: String)
+    case createSkillOther(idJsk: String, idResume: String, parameter: SkillOtherData)
+    case updateSkillOther(idJsk: String, idResume: String, idSkill: String, parameter: SkillOtherData)
+    case fetchLevelSkill()
 }

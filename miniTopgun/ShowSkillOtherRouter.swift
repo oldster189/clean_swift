@@ -29,20 +29,13 @@ class ShowSkillOtherRouter: NSObject, ShowSkillOtherRoutingLogic, ShowSkillOther
   
   // MARK: Routing
   
-  //func routeToSomewhere(segue: UIStoryboardSegue?)
-  //{
-  //  if let segue = segue {
-  //    let destinationVC = segue.destination as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //  } else {
-  //    let storyboard = UIStoryboard(name: "Main", bundle: nil)
-  //    let destinationVC = storyboard.instantiateViewController(withIdentifier: "SomewhereViewController") as! SomewhereViewController
-  //    var destinationDS = destinationVC.router!.dataStore!
-  //    passDataToSomewhere(source: dataStore!, destination: &destinationDS)
-  //    navigateToSomewhere(source: viewController!, destination: destinationVC)
-  //  }
-  //}
+    func routeToUpdateSkillOther(segue: UIStoryboardSegue)
+    {
+        let destinationVC = segue.destination as! CreateSkillOtherViewController
+        var destinationDS = destinationVC.router!.dataStore!
+        passDataToShowOrder(source: dataStore!, destination: &destinationDS)
+        print("routeToUpdateSkillOther")
+    }
 
   // MARK: Navigation
   
@@ -53,8 +46,9 @@ class ShowSkillOtherRouter: NSObject, ShowSkillOtherRoutingLogic, ShowSkillOther
   
   // MARK: Passing data
   
-  //func passDataToSomewhere(source: ShowSkillOtherDataStore, destination: inout SomewhereDataStore)
-  //{
-  //  destination.name = source.name
-  //}
+    
+    func passDataToShowOrder(source: ShowSkillOtherDataStore, destination: inout CreateSkillOtherDataStore)
+    {
+        destination.skillOtherEditDict = source.skillOtherDataEdit 
+    }
 }

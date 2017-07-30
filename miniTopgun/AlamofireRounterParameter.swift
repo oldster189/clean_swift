@@ -13,9 +13,13 @@ extension AlamofireRouter {
     
     public var parameters: [String: Any]? {
         switch self {
-        case .getSkillOther :
+        case .fetchSkillOther :
             return nil
-        case .createSkillOther:
+        case .createSkillOther(_, _, let parameter):
+            return parameter.dictionaryRepresentation()
+        case .updateSkillOther(_, _, _, let parameter):
+            return parameter.dictionaryRepresentation()
+        case .fetchLevelSkill:
             return nil
         }
     }

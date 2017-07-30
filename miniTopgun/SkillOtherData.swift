@@ -1,14 +1,14 @@
 //
 //  SkillOtherData.swift
 //
-//  Created by Codemobiles on 7/24/2560 BE
+//  Created by itthipon wiwatthanasathit on 7/31/2560 BE
 //  Copyright (c) . All rights reserved.
 //
 
 import Foundation
 import SwiftyJSON
 
-public struct SkillOtherData {
+public final class SkillOtherData: NSCoding {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
@@ -35,14 +35,14 @@ public struct SkillOtherData {
   ///
   /// - parameter object: The object of either Dictionary or Array kind that was passed.
   /// - returns: An initialized instance of the class.
-  public init(object: Any) {
+  public convenience init(object: Any) {
     self.init(json: JSON(object))
   }
 
   /// Initiates the instance based on the JSON that was passed.
   ///
   /// - parameter json: JSON object from SwiftyJSON.
-  public init(json: JSON) {
+  public required init(json: JSON) {
     iD = json[SerializationKeys.iD].string
     iDJSK = json[SerializationKeys.iDJSK].string
     sKILLLEVELTH = json[SerializationKeys.sKILLLEVELTH].string
@@ -65,6 +65,27 @@ public struct SkillOtherData {
     if let value = sKILLNAME { dictionary[SerializationKeys.sKILLNAME] = value }
     if let value = lEVELSKILL { dictionary[SerializationKeys.lEVELSKILL] = value }
     return dictionary
+  }
+
+  // MARK: NSCoding Protocol
+  required public init(coder aDecoder: NSCoder) {
+    self.iD = aDecoder.decodeObject(forKey: SerializationKeys.iD) as? String
+    self.iDJSK = aDecoder.decodeObject(forKey: SerializationKeys.iDJSK) as? String
+    self.sKILLLEVELTH = aDecoder.decodeObject(forKey: SerializationKeys.sKILLLEVELTH) as? String
+    self.iDRESUME = aDecoder.decodeObject(forKey: SerializationKeys.iDRESUME) as? String
+    self.sKILLLEVELEN = aDecoder.decodeObject(forKey: SerializationKeys.sKILLLEVELEN) as? String
+    self.sKILLNAME = aDecoder.decodeObject(forKey: SerializationKeys.sKILLNAME) as? String
+    self.lEVELSKILL = aDecoder.decodeObject(forKey: SerializationKeys.lEVELSKILL) as? String
+  }
+
+  public func encode(with aCoder: NSCoder) {
+    aCoder.encode(iD, forKey: SerializationKeys.iD)
+    aCoder.encode(iDJSK, forKey: SerializationKeys.iDJSK)
+    aCoder.encode(sKILLLEVELTH, forKey: SerializationKeys.sKILLLEVELTH)
+    aCoder.encode(iDRESUME, forKey: SerializationKeys.iDRESUME)
+    aCoder.encode(sKILLLEVELEN, forKey: SerializationKeys.sKILLLEVELEN)
+    aCoder.encode(sKILLNAME, forKey: SerializationKeys.sKILLNAME)
+    aCoder.encode(lEVELSKILL, forKey: SerializationKeys.lEVELSKILL)
   }
 
 }

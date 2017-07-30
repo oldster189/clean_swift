@@ -22,7 +22,6 @@
 		A94D4EBA1F263AAB00807A58 /* AlamofireRouterURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D4EB91F263AAB00807A58 /* AlamofireRouterURLRequest.swift */; };
 		A94D4EBC1F263B0500807A58 /* AlamofireRouterPath.swift in Sources */ = {isa = PBXBuildFile; fileRef = A94D4EBB1F263B0500807A58 /* AlamofireRouterPath.swift */; };
 		A9959B4A1F2E25530013645E /* CreateSkillOtherInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9959B441F2E25530013645E /* CreateSkillOtherInteractor.swift */; };
-		A9959B4B1F2E25530013645E /* CreateSkillOtherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9959B451F2E25530013645E /* CreateSkillOtherModels.swift */; };
 		A9959B4C1F2E25530013645E /* CreateSkillOtherPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9959B461F2E25530013645E /* CreateSkillOtherPresenter.swift */; };
 		A9959B4D1F2E25530013645E /* CreateSkillOtherRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9959B471F2E25530013645E /* CreateSkillOtherRouter.swift */; };
 		A9959B4E1F2E25530013645E /* CreateSkillOtherViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9959B481F2E25530013645E /* CreateSkillOtherViewController.swift */; };
@@ -32,6 +31,7 @@
 		A9959B5A1F2E572E0013645E /* SkillOtherData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9959B581F2E572E0013645E /* SkillOtherData.swift */; };
 		A9959B5D1F2E57360013645E /* LevelSkillBase.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9959B5B1F2E57360013645E /* LevelSkillBase.swift */; };
 		A9959B5E1F2E57360013645E /* LevelSkillData.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9959B5C1F2E57360013645E /* LevelSkillData.swift */; };
+		A9959B601F2E67760013645E /* CreateSkillOtherModels.swift in Sources */ = {isa = PBXBuildFile; fileRef = A9959B5F1F2E67760013645E /* CreateSkillOtherModels.swift */; };
 		D200C98E1F25FECD0097F0A9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C98D1F25FECD0097F0A9 /* AppDelegate.swift */; };
 		D200C9901F25FECD0097F0A9 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D200C98F1F25FECD0097F0A9 /* ViewController.swift */; };
 		D200C9931F25FECD0097F0A9 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D200C9911F25FECD0097F0A9 /* Main.storyboard */; };
@@ -63,7 +63,6 @@
 		A94D4EB91F263AAB00807A58 /* AlamofireRouterURLRequest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRouterURLRequest.swift; sourceTree = "<group>"; };
 		A94D4EBB1F263B0500807A58 /* AlamofireRouterPath.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AlamofireRouterPath.swift; sourceTree = "<group>"; };
 		A9959B441F2E25530013645E /* CreateSkillOtherInteractor.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSkillOtherInteractor.swift; sourceTree = "<group>"; };
-		A9959B451F2E25530013645E /* CreateSkillOtherModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSkillOtherModels.swift; sourceTree = "<group>"; };
 		A9959B461F2E25530013645E /* CreateSkillOtherPresenter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSkillOtherPresenter.swift; sourceTree = "<group>"; };
 		A9959B471F2E25530013645E /* CreateSkillOtherRouter.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSkillOtherRouter.swift; sourceTree = "<group>"; };
 		A9959B481F2E25530013645E /* CreateSkillOtherViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSkillOtherViewController.swift; sourceTree = "<group>"; };
@@ -73,6 +72,7 @@
 		A9959B581F2E572E0013645E /* SkillOtherData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SkillOtherData.swift; sourceTree = "<group>"; };
 		A9959B5B1F2E57360013645E /* LevelSkillBase.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSkillBase.swift; sourceTree = "<group>"; };
 		A9959B5C1F2E57360013645E /* LevelSkillData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LevelSkillData.swift; sourceTree = "<group>"; };
+		A9959B5F1F2E67760013645E /* CreateSkillOtherModels.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CreateSkillOtherModels.swift; sourceTree = "<group>"; };
 		D200C98A1F25FECD0097F0A9 /* miniTopgun.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = miniTopgun.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D200C98D1F25FECD0097F0A9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D200C98F1F25FECD0097F0A9 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -165,7 +165,7 @@
 			isa = PBXGroup;
 			children = (
 				A9959B441F2E25530013645E /* CreateSkillOtherInteractor.swift */,
-				A9959B451F2E25530013645E /* CreateSkillOtherModels.swift */,
+				A9959B5F1F2E67760013645E /* CreateSkillOtherModels.swift */,
 				A9959B461F2E25530013645E /* CreateSkillOtherPresenter.swift */,
 				A9959B471F2E25530013645E /* CreateSkillOtherRouter.swift */,
 				A9959B481F2E25530013645E /* CreateSkillOtherViewController.swift */,
@@ -385,7 +385,6 @@
 				D200C9C81F260A8E0097F0A9 /* SkillOtherWorker.swift in Sources */,
 				D200C9901F25FECD0097F0A9 /* ViewController.swift in Sources */,
 				A90E42341F2657CE00D99426 /* ShowSkillOtherWorker.swift in Sources */,
-				A9959B4B1F2E25530013645E /* CreateSkillOtherModels.swift in Sources */,
 				A94D4EBC1F263B0500807A58 /* AlamofireRouterPath.swift in Sources */,
 				A94D4EB61F263A7A00807A58 /* AlamofireRounterMethod.swift in Sources */,
 				A9959B561F2E4F380013645E /* Constants.swift in Sources */,
@@ -403,6 +402,7 @@
 				A90E42321F2657CE00D99426 /* ShowSkillOtherRouter.swift in Sources */,
 				D200C9C61F260A8E0097F0A9 /* SkillOtherRouter.swift in Sources */,
 				D200C9C31F260A8E0097F0A9 /* SkillOtherInteractor.swift in Sources */,
+				A9959B601F2E67760013645E /* CreateSkillOtherModels.swift in Sources */,
 				A9959B4D1F2E25530013645E /* CreateSkillOtherRouter.swift in Sources */,
 				D200C9C51F260A8E0097F0A9 /* SkillOtherPresenter.swift in Sources */,
 				A9959B4C1F2E25530013645E /* CreateSkillOtherPresenter.swift in Sources */,

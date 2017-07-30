@@ -1,5 +1,5 @@
 //
-//  SkillOtherBase.swift
+//  LevelSkillBase.swift
 //
 //  Created by itthipon wiwatthanasathit on 7/31/2560 BE
 //  Copyright (c) . All rights reserved.
@@ -8,7 +8,7 @@
 import Foundation
 import SwiftyJSON
 
-public final class SkillOtherBase: NSCoding {
+public final class LevelSkillBase:NSObject, NSCoding {
 
   // MARK: Declaration for string constants to be used to decode and also serialize.
   private struct SerializationKeys {
@@ -17,7 +17,7 @@ public final class SkillOtherBase: NSCoding {
   }
 
   // MARK: Properties
-  public var data: [SkillOtherData]?
+  public var data: [LevelSkillData]?
   public var success: Int?
 
   // MARK: SwiftyJSON Initializers
@@ -33,7 +33,7 @@ public final class SkillOtherBase: NSCoding {
   ///
   /// - parameter json: JSON object from SwiftyJSON.
   public required init(json: JSON) {
-    if let items = json[SerializationKeys.data].array { data = items.map { SkillOtherData(json: $0) } }
+    if let items = json[SerializationKeys.data].array { data = items.map { LevelSkillData(json: $0) } }
     success = json[SerializationKeys.success].int
   }
 
@@ -49,7 +49,7 @@ public final class SkillOtherBase: NSCoding {
 
   // MARK: NSCoding Protocol
   required public init(coder aDecoder: NSCoder) {
-    self.data = aDecoder.decodeObject(forKey: SerializationKeys.data) as? [SkillOtherData]
+    self.data = aDecoder.decodeObject(forKey: SerializationKeys.data) as? [LevelSkillData]
     self.success = aDecoder.decodeObject(forKey: SerializationKeys.success) as? Int
   }
 
